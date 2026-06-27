@@ -1,0 +1,107 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 20px 48px;
+}
+
+.hero-panel {
+  background: linear-gradient(135deg, #111827, #1f3a5f);
+  color: #f9fafb;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8dd3ff;
+  margin-bottom: 8px;
+}
+
+.hero-text {
+  margin-top: 12px;
+  max-width: 680px;
+  color: #dbeafe;
+}
+
+.table-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.count-pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 700;
+}
+
+.status-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #0f172a;
+  text-align: center;
+}
+
+.status-card.error {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+td a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero-panel,
+  .table-card {
+    padding: 20px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
